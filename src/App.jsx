@@ -7,10 +7,15 @@ import Settings from "./page/Settings.jsx"
 import Profile from "./page/Profile.jsx"
 import Notfound from "./page/Notfound.jsx"
 import Navbar from './components/Navbar.jsx';
+import { useAuthstore } from './store/useAuthstore.jsx';
 
 const App = () => {
 
-  console.log("chal raha hae ")
+  const {authUser,cheakAuth}= useAuthstore();
+  useEffect(()=>{
+    cheakAuth()
+  },[cheakAuth])
+  console.log(authUser)
   return (
     <>
 
