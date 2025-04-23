@@ -1,0 +1,9 @@
+h1{
+    text-align: center;
+    font-weight: 900;
+    font-size: 120px;
+    /* ; */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
