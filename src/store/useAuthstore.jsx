@@ -1,6 +1,7 @@
 import axios from "axios"
 import {create} from "zustand"
 import { axiosInstanes } from "../lib/axios";
+// import Singup from "../page/Singup";
 
 export const useAuthstore= create((set)=>({
     authUser:null,
@@ -22,5 +23,16 @@ export const useAuthstore= create((set)=>({
             }finally{
                 set({authUser:false})
             }
+    },
+
+    singup:async(data)=>{
+        set({ isSigningUp: true });
+        try{
+
+        }catch(error){
+            
+        }finally{
+
+        }
     }
 }))
